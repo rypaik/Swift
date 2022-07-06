@@ -1,4 +1,7 @@
-#  <#Title#>
+#  Object State Readme
+
+
+## STATUS: WORKING IN XCODE
 
 ### TODO
 - [ ] ForEach ( < array> ) { <action> }
@@ -9,3 +12,4 @@
 - [ ] type(of: )
 - [ ] UUID().uuidString
 - [ ] .onDelete(perform: <function>)
+

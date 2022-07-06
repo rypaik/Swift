@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29858ACF2875128100E2824F /* StudyCardsFbMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858ACE2875128100E2824F /* StudyCardsFbMVVMApp.swift */; };
+		29858AD12875128100E2824F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858AD02875128100E2824F /* ContentView.swift */; };
+		29858AD32875128200E2824F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29858AD22875128200E2824F /* Assets.xcassets */; };
+		29858AD62875128200E2824F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29858AD52875128200E2824F /* Preview Assets.xcassets */; };
+		29858AD82875128200E2824F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858AD72875128200E2824F /* Persistence.swift */; };
+		29858ADB2875128200E2824F /* StudyCardsFbMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29858AD92875128200E2824F /* StudyCardsFbMVVM.xcdatamodeld */; };
+		29858AE52875128200E2824F /* StudyCardsFbMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858AE42875128200E2824F /* StudyCardsFbMVVMTests.swift */; };
+		29858AEF2875128200E2824F /* StudyCardsFbMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858AEE2875128200E2824F /* StudyCardsFbMVVMUITests.swift */; };
+		29858AF12875128200E2824F /* StudyCardsFbMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858AF02875128200E2824F /* StudyCardsFbMVVMUITestsLaunchTests.swift */; };
+		29858AFE287512BD00E2824F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29858AFD287512BD00E2824F /* GoogleService-Info.plist */; };
+		29858B012875139E00E2824F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B002875139E00E2824F /* FirebaseAnalytics */; };
+		29858B032875139E00E2824F /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B022875139E00E2824F /* FirebaseAnalyticsSwift */; };
+		29858B052875139E00E2824F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B042875139E00E2824F /* FirebaseAuth */; };
+		29858B072875139E00E2824F /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B062875139E00E2824F /* FirebaseAuthCombine-Community */; };
+		29858B092875139E00E2824F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B082875139E00E2824F /* FirebaseDatabase */; };
+		29858B0B2875139E00E2824F /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B0A2875139E00E2824F /* FirebaseDatabaseSwift */; };
+		29858B0D2875139E00E2824F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B0C2875139E00E2824F /* FirebaseFirestore */; };
+		29858B0F2875139E00E2824F /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B0E2875139E00E2824F /* FirebaseFirestoreCombine-Community */; };
+		29858B112875139E00E2824F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B102875139E00E2824F /* FirebaseFirestoreSwift */; };
+		29858B132875139E00E2824F /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B122875139E00E2824F /* FirebaseFunctions */; };
+		29858B152875139E00E2824F /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B142875139E00E2824F /* FirebaseFunctionsCombine-Community */; };
+		29858B172875139E00E2824F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B162875139E00E2824F /* FirebaseMessaging */; };
+		29858B192875139E00E2824F /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B182875139E00E2824F /* FirebasePerformance */; };
+		29858B1B2875139E00E2824F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B1A2875139E00E2824F /* FirebaseStorage */; };
+		29858B1D2875139E00E2824F /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 29858B1C2875139E00E2824F /* FirebaseStorageCombine-Community */; };
+		29858B1F28751D1A00E2824F /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B1E28751D1A00E2824F /* CardListView.swift */; };
+		29858B2428751EEC00E2824F /* CardRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B2328751EEC00E2824F /* CardRepo.swift */; };
+		29858B2628751F6700E2824F /* StudyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B2528751F6700E2824F /* StudyCard.swift */; };
+		29858B2928752DF300E2824F /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B2828752DF300E2824F /* CardListViewModel.swift */; };
+		29858B2B28754C0F00E2824F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B2A28754C0F00E2824F /* CardView.swift */; };
+		29858B2D28754C6A00E2824F /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B2C28754C6A00E2824F /* CardViewModel.swift */; };
+		29858B2F28758E9C00E2824F /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858B2E28758E9C00E2824F /* FormView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29858AE12875128200E2824F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29858AC32875128100E2824F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29858ACA2875128100E2824F;
+			remoteInfo = StudyCardsFbMVVM;
+		};
+		29858AEB2875128200E2824F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29858AC32875128100E2824F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29858ACA2875128100E2824F;
+			remoteInfo = StudyCardsFbMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29858ACB2875128100E2824F /* StudyCardsFbMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyCardsFbMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29858ACE2875128100E2824F /* StudyCardsFbMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsFbMVVMApp.swift; sourceTree = "<group>"; };
+		29858AD02875128100E2824F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		29858AD22875128200E2824F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29858AD52875128200E2824F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29858AD72875128200E2824F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		29858ADA2875128200E2824F /* StudyCardsFbMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudyCardsFbMVVM.xcdatamodel; sourceTree = "<group>"; };
+		29858AE02875128200E2824F /* StudyCardsFbMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyCardsFbMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29858AE42875128200E2824F /* StudyCardsFbMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsFbMVVMTests.swift; sourceTree = "<group>"; };
+		29858AEA2875128200E2824F /* StudyCardsFbMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyCardsFbMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29858AEE2875128200E2824F /* StudyCardsFbMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsFbMVVMUITests.swift; sourceTree = "<group>"; };
+		29858AF02875128200E2824F /* StudyCardsFbMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsFbMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29858AFD287512BD00E2824F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		29858B1E28751D1A00E2824F /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		29858B2328751EEC00E2824F /* CardRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepo.swift; sourceTree = "<group>"; };
+		29858B2528751F6700E2824F /* StudyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCard.swift; sourceTree = "<group>"; };
+		29858B2828752DF300E2824F /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		29858B2A28754C0F00E2824F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		29858B2C28754C6A00E2824F /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		29858B2E28758E9C00E2824F /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29858AC82875128100E2824F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29858B172875139E00E2824F /* FirebaseMessaging in Frameworks */,
+				29858B0B2875139E00E2824F /* FirebaseDatabaseSwift in Frameworks */,
+				29858B0F2875139E00E2824F /* FirebaseFirestoreCombine-Community in Frameworks */,
+				29858B092875139E00E2824F /* FirebaseDatabase in Frameworks */,
+				29858B032875139E00E2824F /* FirebaseAnalyticsSwift in Frameworks */,
+				29858B052875139E00E2824F /* FirebaseAuth in Frameworks */,
+				29858B012875139E00E2824F /* FirebaseAnalytics in Frameworks */,
+				29858B1D2875139E00E2824F /* FirebaseStorageCombine-Community in Frameworks */,
+				29858B072875139E00E2824F /* FirebaseAuthCombine-Community in Frameworks */,
+				29858B132875139E00E2824F /* FirebaseFunctions in Frameworks */,
+				29858B0D2875139E00E2824F /* FirebaseFirestore in Frameworks */,
+				29858B192875139E00E2824F /* FirebasePerformance in Frameworks */,
+				29858B1B2875139E00E2824F /* FirebaseStorage in Frameworks */,
+				29858B152875139E00E2824F /* FirebaseFunctionsCombine-Community in Frameworks */,
+				29858B112875139E00E2824F /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29858ADD2875128200E2824F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29858AE72875128200E2824F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29858AC22875128100E2824F = {
+			isa = PBXGroup;
+			children = (
+				29858ACD2875128100E2824F /* StudyCardsFbMVVM */,
+				29858AE32875128200E2824F /* StudyCardsFbMVVMTests */,
+				29858AED2875128200E2824F /* StudyCardsFbMVVMUITests */,
+				29858ACC2875128100E2824F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29858ACC2875128100E2824F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29858ACB2875128100E2824F /* StudyCardsFbMVVM.app */,
+				29858AE02875128200E2824F /* StudyCardsFbMVVMTests.xctest */,
+				29858AEA2875128200E2824F /* StudyCardsFbMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29858ACD2875128100E2824F /* StudyCardsFbMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				29858B2728752DD000E2824F /* ViewModels */,
+				29858B2228751ED000E2824F /* Repo */,
+				29858B2128751EAE00E2824F /* Views */,
+				29858B2028751EA100E2824F /* Model */,
+				29858AFD287512BD00E2824F /* GoogleService-Info.plist */,
+				29858ACE2875128100E2824F /* StudyCardsFbMVVMApp.swift */,
+				29858AD22875128200E2824F /* Assets.xcassets */,
+				29858AD72875128200E2824F /* Persistence.swift */,
+				29858AD92875128200E2824F /* StudyCardsFbMVVM.xcdatamodeld */,
+				29858AD42875128200E2824F /* Preview Content */,
+			);
+			path = StudyCardsFbMVVM;
+			sourceTree = "<group>";
+		};
+		29858AD42875128200E2824F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				29858AD52875128200E2824F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29858AE32875128200E2824F /* StudyCardsFbMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				29858AE42875128200E2824F /* StudyCardsFbMVVMTests.swift */,
+			);
+			path = StudyCardsFbMVVMTests;
+			sourceTree = "<group>";
+		};
+		29858AED2875128200E2824F /* StudyCardsFbMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29858AEE2875128200E2824F /* StudyCardsFbMVVMUITests.swift */,
+				29858AF02875128200E2824F /* StudyCardsFbMVVMUITestsLaunchTests.swift */,
+			);
+			path = StudyCardsFbMVVMUITests;
+			sourceTree = "<group>";
+		};
+		29858B2028751EA100E2824F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29858B2528751F6700E2824F /* StudyCard.swift */,
+				29858B2C28754C6A00E2824F /* CardViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29858B2128751EAE00E2824F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29858AD02875128100E2824F /* ContentView.swift */,
+				29858B1E28751D1A00E2824F /* CardListView.swift */,
+				29858B2A28754C0F00E2824F /* CardView.swift */,
+				29858B2E28758E9C00E2824F /* FormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29858B2228751ED000E2824F /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				29858B2328751EEC00E2824F /* CardRepo.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		29858B2728752DD000E2824F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				29858B2828752DF300E2824F /* CardListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29858ACA2875128100E2824F /* StudyCardsFbMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29858AF42875128200E2824F /* Build configuration list for PBXNativeTarget "StudyCardsFbMVVM" */;
+			buildPhases = (
+				29858AC72875128100E2824F /* Sources */,
+				29858AC82875128100E2824F /* Frameworks */,
+				29858AC92875128100E2824F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyCardsFbMVVM;
+			packageProductDependencies = (
+				29858B002875139E00E2824F /* FirebaseAnalytics */,
+				29858B022875139E00E2824F /* FirebaseAnalyticsSwift */,
+				29858B042875139E00E2824F /* FirebaseAuth */,
+				29858B062875139E00E2824F /* FirebaseAuthCombine-Community */,
+				29858B082875139E00E2824F /* FirebaseDatabase */,
+				29858B0A2875139E00E2824F /* FirebaseDatabaseSwift */,
+				29858B0C2875139E00E2824F /* FirebaseFirestore */,
+				29858B0E2875139E00E2824F /* FirebaseFirestoreCombine-Community */,
+				29858B102875139E00E2824F /* FirebaseFirestoreSwift */,
+				29858B122875139E00E2824F /* FirebaseFunctions */,
+				29858B142875139E00E2824F /* FirebaseFunctionsCombine-Community */,
+				29858B162875139E00E2824F /* FirebaseMessaging */,
+				29858B182875139E00E2824F /* FirebasePerformance */,
+				29858B1A2875139E00E2824F /* FirebaseStorage */,
+				29858B1C2875139E00E2824F /* FirebaseStorageCombine-Community */,
+			);
+			productName = StudyCardsFbMVVM;
+			productReference = 29858ACB2875128100E2824F /* StudyCardsFbMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29858ADF2875128200E2824F /* StudyCardsFbMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29858AF72875128200E2824F /* Build configuration list for PBXNativeTarget "StudyCardsFbMVVMTests" */;
+			buildPhases = (
+				29858ADC2875128200E2824F /* Sources */,
+				29858ADD2875128200E2824F /* Frameworks */,
+				29858ADE2875128200E2824F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29858AE22875128200E2824F /* PBXTargetDependency */,
+			);
+			name = StudyCardsFbMVVMTests;
+			productName = StudyCardsFbMVVMTests;
+			productReference = 29858AE02875128200E2824F /* StudyCardsFbMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29858AE92875128200E2824F /* StudyCardsFbMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29858AFA2875128200E2824F /* Build configuration list for PBXNativeTarget "StudyCardsFbMVVMUITests" */;
+			buildPhases = (
+				29858AE62875128200E2824F /* Sources */,
+				29858AE72875128200E2824F /* Frameworks */,
+				29858AE82875128200E2824F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29858AEC2875128200E2824F /* PBXTargetDependency */,
+			);
+			name = StudyCardsFbMVVMUITests;
+			productName = StudyCardsFbMVVMUITests;
+			productReference = 29858AEA2875128200E2824F /* StudyCardsFbMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29858AC32875128100E2824F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					29858ACA2875128100E2824F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					29858ADF2875128200E2824F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 29858ACA2875128100E2824F;
+					};
+					29858AE92875128200E2824F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 29858ACA2875128100E2824F;
+					};
+				};
+			};
+			buildConfigurationList = 29858AC62875128100E2824F /* Build configuration list for PBXProject "StudyCardsFbMVVM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29858AC22875128100E2824F;
+			packageReferences = (
+				29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 29858ACC2875128100E2824F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29858ACA2875128100E2824F /* StudyCardsFbMVVM */,
+				29858ADF2875128200E2824F /* StudyCardsFbMVVMTests */,
+				29858AE92875128200E2824F /* StudyCardsFbMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29858AC92875128100E2824F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29858AD62875128200E2824F /* Preview Assets.xcassets in Resources */,
+				29858AD32875128200E2824F /* Assets.xcassets in Resources */,
+				29858AFE287512BD00E2824F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29858ADE2875128200E2824F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29858AE82875128200E2824F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29858AC72875128100E2824F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29858AD82875128200E2824F /* Persistence.swift in Sources */,
+				29858B2B28754C0F00E2824F /* CardView.swift in Sources */,
+				29858B2628751F6700E2824F /* StudyCard.swift in Sources */,
+				29858ADB2875128200E2824F /* StudyCardsFbMVVM.xcdatamodeld in Sources */,
+				29858B2D28754C6A00E2824F /* CardViewModel.swift in Sources */,
+				29858B1F28751D1A00E2824F /* CardListView.swift in Sources */,
+				29858B2928752DF300E2824F /* CardListViewModel.swift in Sources */,
+				29858AD12875128100E2824F /* ContentView.swift in Sources */,
+				29858ACF2875128100E2824F /* StudyCardsFbMVVMApp.swift in Sources */,
+				29858B2428751EEC00E2824F /* CardRepo.swift in Sources */,
+				29858B2F28758E9C00E2824F /* FormView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29858ADC2875128200E2824F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29858AE52875128200E2824F /* StudyCardsFbMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29858AE62875128200E2824F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29858AF12875128200E2824F /* StudyCardsFbMVVMUITestsLaunchTests.swift in Sources */,
+				29858AEF2875128200E2824F /* StudyCardsFbMVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29858AE22875128200E2824F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29858ACA2875128100E2824F /* StudyCardsFbMVVM */;
+			targetProxy = 29858AE12875128200E2824F /* PBXContainerItemProxy */;
+		};
+		29858AEC2875128200E2824F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29858ACA2875128100E2824F /* StudyCardsFbMVVM */;
+			targetProxy = 29858AEB2875128200E2824F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29858AF22875128200E2824F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29858AF32875128200E2824F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29858AF52875128200E2824F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyCardsFbMVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FD8C55JAS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Byun.StudyCardsFbMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29858AF62875128200E2824F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StudyCardsFbMVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FD8C55JAS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Byun.StudyCardsFbMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29858AF82875128200E2824F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FD8C55JAS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Byun.StudyCardsFbMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyCardsFbMVVM.app/StudyCardsFbMVVM";
+			};
+			name = Debug;
+		};
+		29858AF92875128200E2824F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FD8C55JAS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Byun.StudyCardsFbMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyCardsFbMVVM.app/StudyCardsFbMVVM";
+			};
+			name = Release;
+		};
+		29858AFB2875128200E2824F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FD8C55JAS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Byun.StudyCardsFbMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudyCardsFbMVVM;
+			};
+			name = Debug;
+		};
+		29858AFC2875128200E2824F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FD8C55JAS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Byun.StudyCardsFbMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudyCardsFbMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29858AC62875128100E2824F /* Build configuration list for PBXProject "StudyCardsFbMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29858AF22875128200E2824F /* Debug */,
+				29858AF32875128200E2824F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29858AF42875128200E2824F /* Build configuration list for PBXNativeTarget "StudyCardsFbMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29858AF52875128200E2824F /* Debug */,
+				29858AF62875128200E2824F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29858AF72875128200E2824F /* Build configuration list for PBXNativeTarget "StudyCardsFbMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29858AF82875128200E2824F /* Debug */,
+				29858AF92875128200E2824F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29858AFA2875128200E2824F /* Build configuration list for PBXNativeTarget "StudyCardsFbMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29858AFB2875128200E2824F /* Debug */,
+				29858AFC2875128200E2824F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29858B002875139E00E2824F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		29858B022875139E00E2824F /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		29858B042875139E00E2824F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		29858B062875139E00E2824F /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		29858B082875139E00E2824F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		29858B0A2875139E00E2824F /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		29858B0C2875139E00E2824F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		29858B0E2875139E00E2824F /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		29858B102875139E00E2824F /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		29858B122875139E00E2824F /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		29858B142875139E00E2824F /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		29858B162875139E00E2824F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		29858B182875139E00E2824F /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		29858B1A2875139E00E2824F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		29858B1C2875139E00E2824F /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29858AFF2875139E00E2824F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		29858AD92875128200E2824F /* StudyCardsFbMVVM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29858ADA2875128200E2824F /* StudyCardsFbMVVM.xcdatamodel */,
+			);
+			currentVersion = 29858ADA2875128200E2824F /* StudyCardsFbMVVM.xcdatamodel */;
+			path = StudyCardsFbMVVM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29858AC32875128100E2824F /* Project object */;
+}
