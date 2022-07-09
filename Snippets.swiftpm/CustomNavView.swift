@@ -73,9 +73,9 @@ struct CircleNumberView : View {
     }
 }
 
-
-struct CustomNavView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomNavView()
-    }
-}
+//
+//struct CustomNavView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CustomNavView()
+//    }
+//}
