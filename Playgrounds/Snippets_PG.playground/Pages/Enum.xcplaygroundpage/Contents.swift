@@ -1,61 +1,63 @@
 //: [Previous](@previous)
 
+//: https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html
+
 
 import Foundation
 import SwiftUI
 import PlaygroundSupport
 import UIKit
 // Add SFSymbols to Playground
-//
-//struct MenuView: View {
-//    var body: some View{
-//        Text("Playground Snippets Starter")
+
+struct MenuView: View {
+    var body: some View {
+        Text("Playground Snippets Starter")
 //        // TODO: test in playgrounds
 //
 //
-//        //struct EnumView: View {
-//        //
-//        //    var selected = "Monday"
-//        //
-//        //    enum Weekday {
-//        ////        case monday
-//        ////        case tuesday
-//        ////        case wednesday
-//        ////        case thursday
-//        ////        case friday
-//        //        case monday, tuesday, wednesday, thursday, friday
-//        //    }
-//        //
-//        //    var day = Weekday.monday
-//        //    day = .tuesday
-//        //    day = .wednesday
-//        //    var body: some View {
-//        //            Text("\(day)")
-//        //    }
-//        //}
+//        struct enumView: View {
+//
+//            var selected = "Monday"
+//
+//            enum Weekday {
+//        //        case monday
+//        //        case tuesday
+//        //        case wednesday
+//        //        case thursday
+//        //        case friday
+//                case monday, tuesday, wednesday, thursday, friday
+//            }
+//
+//            var day = Weekday.monday
+//            day = .tuesday
+//            day = .wednesday
+//            Text("\(day)")
+        }
 //
 //
 //        // Simple Example
-//        enum WeatherType {
-//            case sunny, cloudy, rainy, windy(speed: Int), snowy
-//        }
-//
-//        func getWeatherStatus(weather: WeatherType) -> String? {
-//            switch weather {
-//            case .sunny:
-//                return "Sun Image"
-//            case .cloudy:
-//                return "Cloud Image"
-//            case .rainy:
-//                return "Rainy Cloud Image"
-//            case .windy(let speed) where speed < 10:
-//                return "Little Windy Cloud Image"
-//            case .windy:
-//                return "Windy Cloud Image"
-//            case .snowy:
-//                return "Snowflake Image"
-//            }
-//        }
+    enum WeatherType {
+        case sunny, cloudy, rainy, windy(speed: Int), snowy
+    }
+
+    func getWeatherStatus(weather: WeatherType) -> String? {
+        switch weather {
+        case .sunny:
+            return "Sun Image"
+        case .cloudy:
+            return "Cloud Image"
+        case .rainy:
+            return "Rainy Cloud Image"
+        case .windy(let speed) where speed < 10:
+            return "Little Windy Cloud Image"
+        case .windy:
+            return "Windy Cloud Image"
+        case .snowy:
+            return "Snowflake Image"
+        }
+    }
+}
+
 //
 //
 //        getWeatherStatus(weather:.windy(speed:5))
@@ -97,7 +99,7 @@ import UIKit
 //
 //    }
 //}
-        
+
 
 //PlaygroundPage.current.setLiveView(MenuView())
 

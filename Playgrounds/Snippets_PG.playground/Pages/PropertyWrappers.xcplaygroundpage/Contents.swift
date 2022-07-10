@@ -8,18 +8,18 @@ import Foundation
 import UIKit
 import SwiftUI
 
-@propertyWrapper
-struct UserDefault<Value> {
-    let key: String
-    let defaultValue: Value
-}
-
-func shouldShowOnboardingUI(){
-    if UserDefaults.standard.bool(forKey: "hasOnBoarded") {
-        // show app
-    } else {
-        ///
-    }
-}
+//@propertyWrapper
+//struct UserDefault<Value> {
+//    let key: String
+//    let defaultValue: Value
+//}
+//
+//func shouldShowOnboardingUI(){
+//    if UserDefaults.standard.bool(forKey: "hasOnBoarded") {
+//        // show app
+//    } else {
+//        ///
+//    }
+//}
 
 //: [Next](@next)
