@@ -2,12 +2,28 @@
 <playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='PG_ Starter'/>
+        <page name='TOC'/>
+        <page name='LINKS'/>
         <page name='Menu'/>
         <page name='Markdown'/>
         <page name='RenderPlayground'/>
-        <page name='Forms'/>
         <page name='RenderPGUIKit'/>
+        <page name='SWIFT ----------------'/>
+        <page name='     DATATYPES --------'/>
+        <page name='     FUNCTIONS ----------'/>
+        <page name='     PROPERTIES ---------'/>
+        <page name='Generics'/>
+        <page name='BindingContentView'/>
+        <page name='VIEWS AND NAVIGATION ---'/>
         <page name='Navigation'/>
+        <page name='Forms'/>
+        <page name='UnderScoreOperator'/>
+        <page name='IMCOMPLETE------'/>
         <page name='Closures'/>
+        <page name='Protocols'/>
+        <page name='Enum'/>
+        <page name='OpaqueTypeReturn'/>
+        <page name='Init'/>
+        <page name='PropertyWrappers'/>
     </pages>
 </playground>
