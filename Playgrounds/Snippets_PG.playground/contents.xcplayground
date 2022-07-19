@@ -10,10 +10,15 @@
         <page name='RenderPGUIKit'/>
         <page name='SWIFT ----------------'/>
         <page name='     DATA STRUCTURES --------'/>
+        <page name='MVVM'/>
         <page name='DataTypes'/>
         <page name='Optionals'/>
         <page name='     METHODS ---------'/>
         <page name='     PROPERTIES ---------'/>
+        <page name='StateObject Property'/>
+        <page name='ObservedObject Property'/>
+        <page name='ObservedObject Example'/>
+        <page name='Environment Object Property'/>
         <page name='Operators'/>
         <page name='Generics'/>
         <page name='BindingContentView'/>
@@ -28,6 +33,13 @@
         <page name='Enum'/>
         <page name='OpaqueTypeReturn'/>
         <page name='Init'/>
+        <page name='APPLE LIBRARY ----------'/>
         <page name='PropertyWrappers'/>
+        <page name='Combine'/>
+        <page name='ParsingJSON'/>
+        <page name='Extensions'/>
+        <page name='MVVM API CLIENT'/>
+        <page name='MVVM API CLIENT ERROR'/>
+        <page name='snippets'/>
     </pages>
 </playground>

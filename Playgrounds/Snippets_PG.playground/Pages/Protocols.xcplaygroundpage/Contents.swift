@@ -9,27 +9,27 @@
  
  */
 
-
-import Foundation
-
-procotol SomeProtocol {
-    // property definition
-    var mustBeSettable: Int { get set }
-    var doesNotNeedToBeSettable: Int { get }
-    
-    var fullName: String { get }
-    static var someTypeProperty: Int { get set }
-    
-    // method definition
-}
-
-struct SomeStructure: FirstProtocol, AnotherProtocol {
-    // structure definition goes here
-}
-
-class SomeClass: SomeSuperclass, FirstProtocol, AnotherProtocol {
-    // class definition goes here
-}
+//
+//import Foundation
+//
+//procotol SomeProtocol {
+//    // property definition
+//    var mustBeSettable: Int { get set }
+//    var doesNotNeedToBeSettable: Int { get }
+//    
+//    var fullName: String { get }
+//    static var someTypeProperty: Int { get set }
+//    
+//    // method definition
+//}
+//
+//struct SomeStructure: FirstProtocol, AnotherProtocol {
+//    // structure definition goes here
+//}
+//
+//class SomeClass: SomeSuperclass, FirstProtocol, AnotherProtocol {
+//    // class definition goes here
+//}
 
 
 /*:

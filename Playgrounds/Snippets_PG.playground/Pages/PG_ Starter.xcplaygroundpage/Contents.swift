@@ -11,11 +11,11 @@ import PlaygroundSupport
 struct MenuView: View {
     var body: some View {
         Text("Playground Snippets Starter")
-        
-    }
+            }
 }
-        
+print("test function")
 
+// import PlaygroundSupport
 PlaygroundPage.current.setLiveView(MenuView())
 
 

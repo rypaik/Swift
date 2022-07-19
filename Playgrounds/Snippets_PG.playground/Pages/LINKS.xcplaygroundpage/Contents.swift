@@ -7,7 +7,10 @@
 ## TODO
  - [ ] [SwiftUI Nav - NavigationView an NavigationLink](https://www.youtube.com/watch?v=IopCl8sOyFA&t=300s&ab_channel=SeanAllen)
      - STATUS: WORKING - Playground File: [Navigation](Navigation)
-
+    - [16 Useful Swift Extensions](https://betterprogramming.pub/16-useful-extensions-for-swiftui-88aae6ff8909)
+        [Extensions](Extensions)
+ 
+ 
  ### Hacking with Swift
   - [ ] [ Phantom Dataypes](https://www.hackingwithswift.com/plus/advanced-swift/how-to-use-phantom-types-in-swift)
   - [ ] [ Transforming Data with Map()](https://www.hackingwithswift.com/plus/advanced-swift/how-to-use-phantom-types-in-swift)

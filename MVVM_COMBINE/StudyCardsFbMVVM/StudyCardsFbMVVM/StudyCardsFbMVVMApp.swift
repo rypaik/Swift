@@ -2,7 +2,7 @@
 //  StudyCardsFbMVVMApp.swift
 //  StudyCardsFbMVVM
 //
-//  Created by Jeen Byun on 7/5/22.
+// Created by Jeen Byun on 7/5/22.
 // https://www.youtube.com/watch?v=gSOqyuPDKqo&ab_channel=BeyondOnesAndZeros
 // STATUS: WORKING
 // TODO: fix stars and passed card status
@@ -25,7 +25,7 @@ struct StudyCardsFbMVVMApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
-//    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceControl   ler.shared
 
     var body: some Scene {
         WindowGroup {

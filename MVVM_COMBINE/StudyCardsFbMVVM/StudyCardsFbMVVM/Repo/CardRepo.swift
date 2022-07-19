@@ -20,7 +20,7 @@ final class CardRepository: ObservableObject {
         get()
     }
 
-    //https://youtu.be/gSOqyuPDKqo?t=1128
+    // https://youtu.be/gSOqyuPDKqo?t=1128
     func get() {
         store.collection(path).addSnapshotListener{(snapshot, error) in
             if let error = error {
