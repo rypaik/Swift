@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='PG_ Starter'/>
+        <page name='TOC'/>
+        <page name='LINKS'/>
+        <page name='Menu'/>
+        <page name='Markdown'/>
+        <page name='RenderPlayground'/>
+        <page name='RenderPGUIKit'/>
+        <page name='SWIFT ----------------'/>
+        <page name='     DATA STRUCTURES --------'/>
+        <page name='MVVM'/>
+        <page name='DataTypes'/>
+        <page name='Optionals'/>
+        <page name='     METHODS ---------'/>
+        <page name='     PROPERTIES ---------'/>
+        <page name='StateObject Property'/>
+        <page name='ObservedObject Property'/>
+        <page name='ObservedObject Example'/>
+        <page name='Environment Object Property'/>
+        <page name='Operators'/>
+        <page name='Generics'/>
+        <page name='BindingContentView'/>
+        <page name='VIEWS AND NAVIGATION ---'/>
+        <page name='Navigation'/>
+        <page name='Forms'/>
+        <page name='ErrorHandling'/>
+        <page name='UnderScoreOperator'/>
+        <page name='IMCOMPLETE------'/>
+        <page name='Closures'/>
+        <page name='Protocols'/>
+        <page name='Enum'/>
+        <page name='OpaqueTypeReturn'/>
+        <page name='Init'/>
+        <page name='APPLE LIBRARY ----------'/>
+        <page name='PropertyWrappers'/>
+        <page name='Combine'/>
+        <page name='ParsingJSON'/>
+        <page name='Extensions'/>
+        <page name='MVVM API CLIENT'/>
+        <page name='MVVM API CLIENT ERROR'/>
+        <page name='snippets'/>
+    </pages>
+</playground>
