@@ -1,11 +1,14 @@
 //: [Previous](@previous)
 
 /*:
+ # Using Playgrounds
+ - [Starter Template for Snippet](PG_Starter)
+ 
  # Fundamentals
  ## Data Types
- 
- - [Protocols](Protocols)
- - **[Generics](Generics)**
+ STATUS: WORKING
+ - [Protocols](Protocols) | **working**
+ - **[Generics](Generics)** | ***doube check***
  - [Property Wrappers](PropertyWrappers)
  
  

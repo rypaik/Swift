@@ -54,7 +54,6 @@ final class UsersViewModel: ObservableObject {
                     }
                     
                 }.resume()
-
         }
     }
 }
