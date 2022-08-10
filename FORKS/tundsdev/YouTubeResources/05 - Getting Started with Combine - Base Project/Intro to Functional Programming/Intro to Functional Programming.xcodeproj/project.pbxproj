@@ -6,10 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		64F977C826261D3C00103463 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64F977C726261D3C00103463 /* Info.plist */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		64F97625262618D600103463 /* Intro to Functional Programming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intro to Functional Programming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F977C426261D0A00103463 /* FunctionalProgramming.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionalProgramming.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -79,7 +75,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					64F97624262618D600103463 = {
 						CreatedOnToolsVersion = 12.4;
@@ -109,7 +105,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64F977C826261D3C00103463 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
         <page name='Markdown'/>
         <page name='RenderPlayground'/>
         <page name='RenderPGUIKit'/>
+        <page name='UI'/>
+        <page name='UI Initializer'/>
         <page name='SWIFT ----------------'/>
         <page name='     DATA STRUCTURES --------'/>
         <page name='MVVM'/>
@@ -15,12 +17,17 @@
         <page name='Optionals'/>
         <page name='     METHODS ---------'/>
         <page name='     PROPERTIES ---------'/>
+        <page name='States_SWIFTUI'/>
         <page name='StateObject Property'/>
         <page name='ObservedObject Property'/>
         <page name='ObservedObject Example'/>
         <page name='Environment Object Property'/>
         <page name='Operators'/>
+        <page name='Previews'/>
+        <page name='snippets'/>
         <page name='Generics'/>
+        <page name='Generics00'/>
+        <page name='Generics_vs_Protocol'/>
         <page name='BindingContentView'/>
         <page name='VIEWS AND NAVIGATION ---'/>
         <page name='Navigation'/>
@@ -40,6 +47,5 @@
         <page name='Extensions'/>
         <page name='MVVM API CLIENT'/>
         <page name='MVVM API CLIENT ERROR'/>
-        <page name='snippets'/>
     </pages>
 </playground>

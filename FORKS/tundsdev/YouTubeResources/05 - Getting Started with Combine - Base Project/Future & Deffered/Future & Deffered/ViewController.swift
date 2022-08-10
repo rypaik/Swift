@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     private let permissionBtn: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(permissionBtnDidTouch), for: .touchUpInside)
+        btn.addTarget(ViewController.self, action: #selector(permissionBtnDidTouch), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.layer.cornerRadius = 8
         btn.setTitle("Ask Permission", for: .normal)
