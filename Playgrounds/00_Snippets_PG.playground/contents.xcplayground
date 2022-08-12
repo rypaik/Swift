@@ -37,6 +37,8 @@
         <page name='IMCOMPLETE------'/>
         <page name='Closures'/>
         <page name='Protocols'/>
+        <page name='Protocols01'/>
+        <page name='Protocols02'/>
         <page name='Enum'/>
         <page name='OpaqueTypeReturn'/>
         <page name='Init'/>
