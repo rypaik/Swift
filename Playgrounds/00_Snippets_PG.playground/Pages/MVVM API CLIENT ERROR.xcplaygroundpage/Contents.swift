@@ -1,4 +1,4 @@
-tward//: [Previous](@previous)
+//: [Previous](@previous)
 
 //: Error Checking Added to [MVVM API CLIENT](MVVM%20API%20CLIENT)
 //: [JSON API FOR TESTING AND PROTOTYPING](https://jsonplaceholder.typicode.com/)
