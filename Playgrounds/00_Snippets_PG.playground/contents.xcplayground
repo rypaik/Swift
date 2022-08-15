@@ -50,5 +50,11 @@
         <page name='Extensions'/>
         <page name='MVVM API CLIENT'/>
         <page name='MVVM API CLIENT ERROR'/>
+<<<<<<< Updated upstream
+=======
+        <page name='snippets'/>
+        <page name='Previews'/>
+        <page name='MV_vs_MVVM'/>
+>>>>>>> Stashed changes
     </pages>
 </playground>
